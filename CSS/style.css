@@ -4,3 +4,10 @@ html {
     background-attachment: fixed;
     background-size: cover;
 }
+
+h1 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    align-self: center;
+}
