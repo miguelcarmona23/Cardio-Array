@@ -28,9 +28,6 @@ const allAdults = people.every(person => ((new Date()).getFullYear()) - person.y
 console.log({ allAdults });
 
 
-const comment = comments.find(function(comment) {
-    if (comment.id === 823423) {
-        return true;
-    }
-});
+const comment = comments.find(comment => comment.id === 823423);
+
 console.log(comment);
