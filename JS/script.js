@@ -13,10 +13,13 @@ const comments = [
     { text: 'Nice Nice Nice!', id: 542328 }
 ];
 
-const isAdult = people.some(function(person) {
+/*const isAdult = people.some(function(person) {
     const currentYear = (new Date()).getFullYear();
     if (currentYear - person.year >= 19) {
         return true;
     }
-});
-console.log(isAdult);
+});*/
+
+const isAdult = people.some(person => ((new Date()).getFullYear()) - person.year >= 19);
+
+console.log({ isAdult });
